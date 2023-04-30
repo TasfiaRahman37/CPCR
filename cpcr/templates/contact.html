@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'contactstyle.css' %}">
+    <script src="https://kit.fontawesome.com/2b7970b984.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>CP<span>CR</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h3>CONTACT<span> US</span></h3>
+            <p>We would love to respond to your queries and help you succed. Feel free to get in touch with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form name="submit-to-google-sheet">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" name="Name" placeholder="Your name">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" name="Number" placeholder="+880....">
+                            </div>
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" name="Email" placeholder="abc123@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" name="Subject" placeholder="Topic">
+                            </div>
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" name="Message" placeholder="Type Your Message"></textarea>
+                        <button type="submit">
+                            <b>SEND</b>
+                        </button>
+
+                    </form>
+                </div>
+
+                <div class="vertical"></div>
+
+                <div class="contact-right">    
+                    <h3>Reach Us</h3>
+                    <div class="infobox">
+                        <div class="info1">
+                            <span></span>
+                            <img src="{% static 'Nafis Sadique Ayan.jpg' %}" alt="">
+                            <p> Nafis Sadique Ayan</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:nsayan0408@gmail.com">nsayan0408@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+8801989228154">+8801989228154</a>
+                        </div>
+                        <ul class="sci">
+                            <li><a href="https://www.facebook.com/nafissadique.ayan.92?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://instagram.com/n.s.ayan?igshid=YmMyMTA2M2Y="><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://github.com/Nafis-AYAN"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://www.linkedin.com/in/nafis-sadique-ayan/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="infobox">
+                        <div class="info2"> 
+                            <span></span>
+                            <img src="{% static 'Sultana Razia Faria.jpg' %}" alt="">
+                            <p> Sultana Razia</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:sultanarf2017@gmail.com">sultanarf2017@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+8801910911901">+8801910911901</a>
+                        </div>
+                        <ul class="sci">
+                            <li><a href="https://www.facebook.com/sultanarf2017?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://instagram.com/sultana_razia8?igshid=YmMyMTA2M2Y="><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://github.com/SultanaRazia-39"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://www.linkedin.com/in/sultana-razia-faria-290012253//"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="infobox">
+                        <div class="info3">
+                            <span></span>
+                            <img src="{% static 'Tasfia Rahman.jpg' %}" alt="">
+                            <p> Tasfia Rahman</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:tasfiarahman049@gmail.com">tasfiarahman049@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+8801534522380">+8801534522380</a>
+                        </div>
+                        <ul class="sci">
+                            <li><a href="https://www.facebook.com/tasfia.rahman.9085790"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://www.instagram.com/_tasfia_rahman/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://github.com/TasfiaRahman37"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://www.linkedin.com/in/tasfiarahman37/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright -----------------------------------------footer-----------------------------------">
+        <p>Copyright © Nafis Sadique Ayan || Sultana Razia || Tasfia Rahman. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTKuLkkMk_1AetEAeyhQCGMRIZUxMO1DS13po94Pd9S95qEUDLTN4hTLxEO084uZ-I/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+     form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        }
+    )
+</script>
+</body>
+</html>

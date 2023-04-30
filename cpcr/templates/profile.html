@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'profstyle.css' %}">
+    <script src="https://kit.fontawesome.com/2b7970b984.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>CP<span>CR</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-text">
+                
+            <h1>MY <span>PROFILE</span></h1><br>
+            <!-- <p>Dashboard</p> -->
+        </div>
+
+        <div class="header-text2">
+            <h2>Personal Info</h2>
+            <!-- <p>Dashboard</p> -->
+        </div>
+        
+            <div class="box">
+                <label for="fname">First name: {{request.user.first_name}}</label>
+    
+                <label for="lname">Last name: {{request.user.last_name}}</label>
+     
+                <label for="username">Username: {{request.user.username}}</label>
+    
+                <label for="fpwd">Password: ************ </label>
+           
+                <label for="email">Email: {{request.user.email}}</label>
+            </div>
+    <div class="copyright -----------------------------------------footer-----------------------------------">
+        <p>Copyright © Nafis Sadique Ayan || Sultana Razia || Tasfia Rahman. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+</body>
+</html>
+
+    
+
+
+    <!-- -----------------------------------------footer----------------------------------- -->
+
+    
+<!-- 
+<script src="main.js"></script>
+  
+</body>
+</html> -->
