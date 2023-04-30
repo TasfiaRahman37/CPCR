@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #e4e4e4;
+    color: #080808;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav h1{
+    font-size: 40px;
+}
+
+nav h1 span{
+    color: #1c6768;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #1c6768;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-left: 140px;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.header-text h1 span{
+    color: #1c6768;
+}
+.header-text p{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.header-text2{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 140px;
+    padding-bottom: 20px;
+    height: 0vh;
+    
+}
+.box{
+    display: grid;
+    background: #fff;
+    border: 2px outset #1c6768; 
+    margin: 30px 150px 0px;
+    padding: 20px 0px 20px 40px;
+}
+.box h4{
+    font-size: 15px;
+}
+
+.box label{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+
+
+div {
+  border-radius: 5px;
+  
+  padding: 10px;
+}
+
+.submit{
+    padding: 8px 8px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------footer------------------------- */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #1c6768;
+    font-weight: 300;
+    margin-top: 25px;
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright i{
+    color: #ff004f; 
+}
+
+
+
